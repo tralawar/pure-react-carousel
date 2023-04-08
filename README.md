@@ -1,18 +1,18 @@
-# pure-react-carousel
+# pure-react-carousel-thumbs
 A simple carousel with no other dependencies with thumbnails.
 A simple, customizable carousel component for React applications.
 A customizable React carousel component with support for thumbnails, autoplay, swiping, and more.
 
 ## Installation
-`npm install pure-react-carousel`
+`npm install pure-react-carousel-thumbs`
 
 ## Usage
 
 First, import the Carousel and CarouselThumbs components:
 
 ```
-import Carousel from 'pure-react-carousel';
-import CarouselThumbs from 'pure-react-carousel/CarouselThumbs';
+import Carousel from 'pure-react-carousel-thumbs';
+import CarouselThumbs from 'pure-react-carousel-thumbs/CarouselThumbs';
 
 function App() {
   const images = [
