@@ -1,9 +1,9 @@
 {
     "name": "pure-react-carousel-thumbs",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A simple carousel with no other dependencies with thumbnails. A simple, customizable carousel component for React applications. A customizable React carousel component with support for thumbnails, autoplay, swiping, and more.",
-    "main": "index.tsx",
-    "types": "index.tsx",
+    "main": "src/index.tsx",
+    "types": "src/index.tsx",
     "scripts": {
       "build": "tsc"
     },
