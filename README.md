@@ -11,8 +11,7 @@ A customizable React carousel component with support for thumbnails, autoplay, s
 First, import the Carousel and CarouselThumbs components:
 
 ```
-import Carousel from 'pure-react-carousel-thumbs';
-import CarouselThumbs from 'pure-react-carousel-thumbs/CarouselThumbs';
+import { Carousel, CarouselThumbs } from 'pure-react-carousel-thumbs';
 
 function App() {
   const images = [
