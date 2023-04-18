@@ -45,8 +45,9 @@ The Carousel component displays a carousel of images with customizable options.
 |images	|string[]|undefined|undefined	An array of image URLs to display in the carousel.
 |className|string|undefined|undefined	Optional CSS class for the carousel container.
 |changeOnClick|boolean|true|Whether to change the slide when clicking on it.
+|cover|boolean|false|Whether to cover the entire carousel container otherwise background should scale with **height set to auto**.
 |index|number|0|The initial index of the carousel.
-|height|number|string|'512px'|The height of the carousel container.
+|height|number|string|'auto'|The height of the carousel container.
 |width|number|string|'100%'|The width of the carousel container.
 |interval|number|0|The interval for autoplay (in milliseconds). Set to 0 to disable autoplay.
 |animationDuration|number|500|The duration of the slide change animation (in milliseconds).
@@ -56,3 +57,18 @@ The Carousel component displays a carousel of images with customizable options.
 |navButtonsAlwaysVisible|boolean|false|Whether to always show navigation buttons.
 |navButtonsAlwaysInvisible|boolean|false|Whether to never show navigation buttons.
 
+## CarouselThumbs Component
+The CarouselThumbs component displays a row of thumbnail images that can be clicked to change the current slide in the main carousel.
+
+## Props
+|Prop|Type|Default|Description|
+|---|---|---|---|
+|images|string[] \| undefined|undefined|An array of image URLs to display as thumbnails.
+|currentIndex|number|0|The index of the currently displayed image in the main carousel.
+|changeIndex|(newIndex: number) => void|undefined|A function that changes the index of the currently displayed image in the main carousel.
+|height|number \| string|'250px'|The height of the thumbnail images.
+|width|number \| string|'250px'|The width of the thumbnail images.
+|thumbsClassName|string|undefined|Optional CSS class for the thumbnail images.
+|containerClassName|string|undefined|Optional CSS class for the thumbnails container.
+|thumbStyle|React.CSSProperties|undefined|Optional style object for the thumbnail images.
+|containerStyle|React.CSSProperties|undefined|Optional style object for the thumbnails container.

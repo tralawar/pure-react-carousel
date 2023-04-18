@@ -4,6 +4,7 @@ type CarouselProps = {
   images: string[] | undefined;
   className?: string;
   changeOnClick?: boolean;
+  cover?: boolean;
   height?: number | string;
   width?: number | string;
   index?: number;
@@ -24,9 +25,10 @@ type CarouselProps = {
 const Carousel: React.FC<CarouselProps> = ({
   className,
   changeOnClick = true,
+  cover = false,
   images,
   index = 0,
-  height = '512px',
+  height = 'auto',
   width = '100%',
   interval = 0,
   animationDuration = 500,
@@ -194,9 +196,10 @@ const Carousel: React.FC<CarouselProps> = ({
           alt={`carousel-slide-${imgIndex}`}
           onClick={() => changeOnClick && handleNext}
           style={{
-            position: 'absolute',
+            position: !cover && imgIndex===0 ? 'relative' : 'absolute',
             width: '100%',
             height: '100%',
+            top: 0,
             objectFit: 'cover',
             opacity: currentIndex === imgIndex ? 1 : 0,
             transition: `opacity ${animationDuration}ms ease-in-out`,
