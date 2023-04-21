@@ -1,6 +1,6 @@
 {
     "name": "pure-react-carousel-thumbs",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "A simple carousel with no other dependencies with thumbnails. A simple, customizable carousel component for React applications. A customizable React carousel component with support for thumbnails, autoplay, swiping, and more.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -33,13 +33,13 @@
     "author": "Tarek Alawar",
     "license": "MIT",
     "dependencies": {
-        "react": "^17.0.0"
+        "react": "18.2.0"
     },
     "devDependencies": {
         "@types/react": "^17.0.0",
         "typescript": "^4.9.5"
     },
     "peerDependencies": {
-        "react": "^17.0.0"
+        "react": "18.2.0"
     }
 }
